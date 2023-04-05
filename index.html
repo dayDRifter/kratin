@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Health Reminder</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <h1>Health Reminder</h1>
+    <div id="med-reminder">
+        <h2>Medication Reminder</h2>
+        <form>
+            <label for="med-name">Medication Name:</label>
+            <input type="text" id="med-name" name="med-name">
+            <label for="med-time">Reminder Time:</label>
+            <input type="time" id="med-time" name="med-time">
+            <input type="submit" value="Set Reminder">
+        </form>
+        <ul id="med-list">
+            <!-- Medication reminders will be added dynamically here -->
+        </ul>
+    </div>
+    <div id="health-check">
+        <h2>Health Check Reminder</h2>
+        <form>
+            <label for="bp">Blood Pressure:</label>
+            <input type="number" id="bp" name="bp">
+            <label for="sugar">Blood Sugar:</label>
+            <input type="number" id="sugar" name="sugar">
+            <label for="check-time">Reminder Time:</label>
+            <input type="time" id="check-time" name="check-time">
+            <input type="submit" value="Set Reminder">
+        </form>
+        <ul id="check-list">
+            <!-- Health check reminders will be added dynamically here -->
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
